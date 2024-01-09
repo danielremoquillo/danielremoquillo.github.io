@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body, html,.content, .clock {
+    height: 100%;
+    margin: 0;
+}
+
+.clock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #172121;
+    color: aliceblue;
+}
+
+
+.trademark {
+    display: block;
+    margin: 0 1rem 1rem 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.trademark-logo-github svg{
+    height: 2rem;
+    width: 2rem;
+    margin: 0 0 1rem 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    fill: aliceblue;
+}
+
+.time {
+    height: 12rem;
+    width: 12rem;
+    margin: 1rem;
+    position: relative;
+    line-height: 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.time span {
+    display: block;
+    line-height: 7rem;
+    font-size: 5rem;
+}
+
+#meridiem {
+    font-size: 2rem;
+}
+
+
+/*Responsive View*/
+@media only screen and (max-width: 600px) {
+    .clock {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+    }
+  }
